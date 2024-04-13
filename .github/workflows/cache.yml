@@ -35,4 +35,4 @@ jobs:
         run: go install gotest.tools/gotestsum@latest
       - name: Run tests
         if: steps.go-cache.outputs.cache-hit != 'true'
-        run:  gotestsum --junitfile report.xml || true
+        run:  gotestsum --junitfile report.xml
