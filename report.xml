@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="4" failures="2" errors="0" time="0.726303">
+	<testsuite tests="2" failures="2" time="0.130000" name="go-cache-test/fail" timestamp="2024-04-13T22:07:45+09:00">
+		<properties>
+			<property name="go.version" value="go1.22.2 windows/amd64"></property>
+		</properties>
+		<testcase classname="go-cache-test/fail" name="TestFailSample/fail_sample_test" time="0.000000">
+			<failure message="Failed" type="">=== RUN   TestFailSample/fail_sample_test&#xA;    sample2_test.go:7: This is success sample error&#xA;--- FAIL: TestFailSample/fail_sample_test (0.00s)&#xA;</failure>
+		</testcase>
+		<testcase classname="go-cache-test/fail" name="TestFailSample" time="0.000000">
+			<failure message="Failed" type="">=== RUN   TestFailSample&#xA;--- FAIL: TestFailSample (0.00s)&#xA;</failure>
+		</testcase>
+	</testsuite>
+	<testsuite tests="2" failures="0" time="0.000000" name="go-cache-test/success" timestamp="2024-04-13T22:07:45+09:00">
+		<properties>
+			<property name="go.version" value="go1.22.2 windows/amd64"></property>
+		</properties>
+		<testcase classname="go-cache-test/success" name="TestSample/Sample_test" time="5.000000"></testcase>
+		<testcase classname="go-cache-test/success" name="TestSample" time="5.000000"></testcase>
+	</testsuite>
+</testsuites>
